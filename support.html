@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DS Tunes 技术支持</title>
+  <meta name="description" content="DS Tunes 技术支持与常见问题" />
+  <style>
+    :root {
+      --bg: #0b1224;
+      --card: #121c35;
+      --text: #eaf1ff;
+      --muted: #a9b7d8;
+      --accent: #4da3ff;
+      --line: #273457;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: radial-gradient(1200px 500px at 10% -10%, #1a2f63 0%, var(--bg) 50%);
+      color: var(--text);
+      line-height: 1.75;
+    }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 32px 18px 56px; }
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 22px 18px;
+      margin-bottom: 14px;
+    }
+    h1,h2 { margin: 0 0 10px; }
+    h1 { font-size: 30px; }
+    h2 { font-size: 20px; }
+    p,li { color: var(--muted); margin: 0; }
+    ul { margin: 8px 0 0 20px; padding: 0; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .badge {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid #36507f;
+      color: #b9cdf3;
+      font-size: 12px;
+    }
+    .muted { font-size: 13px; color: #89a0ce; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <h1>DS Tunes 技术支持</h1>
+      <p>欢迎使用 DS Tunes。如遇到连接、播放、缓存或账号问题，请通过本页面获取帮助。</p>
+      <span class="badge">最后更新：2026-04-18</span>
+    </section>
+
+    <section class="card">
+      <h2>常见问题</h2>
+      <ul>
+        <li><strong>无法连接 NAS：</strong>检查 NAS 地址、端口、账号密码是否正确；确认设备与 NAS 网络可达。</li>
+        <li><strong>首次登录失败：</strong>可退出后重试一次，并确认本地网络权限已开启。</li>
+        <li><strong>歌曲无法播放：</strong>尝试点击缓存后再播放，或切换下一首后返回重试。</li>
+        <li><strong>封面不显示：</strong>可能是源端元数据缺失，刷新列表后会自动重试拉取。</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>联系我们</h2>
+      <p>邮箱：<a href="mailto:18910052369@163.com">18910052369@163.com</a></p>
+      <p class="muted">请附上设备型号、iOS 版本、问题截图与复现步骤，便于快速定位。</p>
+    </section>
+
+    <section class="card">
+      <h2>相关页面</h2>
+      <p>隐私政策：<a href="https://tanyanligithub.github.io/dstunes-privacy/" target="_blank" rel="noopener">查看隐私政策</a></p>
+    </section>
+  </main>
+</body>
+</html>
